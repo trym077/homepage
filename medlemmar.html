@@ -1,0 +1,79 @@
+<!--Test: Validering av Html. Resultat: Glömde alt på ett img element, som jag fick lägga till. Nu är den validerad. Utfördes: 2019-05-27 -->
+<!--Test: Validering av Css. Resultat: Det fanns en parse error, som jag fick lägga till. Nu är css:en validerad. Utfördes: 2019-05-27 -->
+<!--Test: manuellt mobiltest. Resultat: Det såg inte bra ut. Footern försvann och jag vet inte varför. Utfördes: 2019-07-01 -->
+<!--Test: webbläsaren Internet explorer. Resultat: Det såg skit ut och det var något fel som jag måste undersöka. Har inte tid till detta. Utfördes: 2019-07-02 -->
+<!--Test: Navigering. Resultat: Alla länkar funkade som de skulle Utfördes: 2019-07-02 -->
+<!--Test: Inladdning. Det tog inte lång tid att ladda in sidorna när jag provade. Utfördes: 2019-07-02-->
+<!--Test: Krypterade länkar. Använde inga länkar. Utfördes: 2019-07-27-->
+
+<!DOCTYPE html>
+<html lang='en'>
+	<head> 	
+		<title>SHK handbollsklubb</title>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<link rel='stylesheet' href='css/medlemmar.css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="topnav" id="myTopnav">
+			<a id='special' href='#hem'><img src='images/shk.png' alt='minilogo'></a>
+			<a href='handbollsklubben.html'> Hem </a> 			
+			<a href='#medlemmar'> Medlemmar </a> 
+			<a href='#handikapp'> Handikapp Lag</a>
+			<a href='#handikapp'> Ungdomslag </a>
+			<a href='#utbildningar'>Utbildningar</a>
+			<a href='#sponsorer'> Sponsorer</a>
+			<a href='#kontakter'> Kontakta oss</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		</div>
+		<div id='huvuddel'>
+			<div id='venster'>
+				<h3> Hur anmäler man sig till ett lag? </h3>
+					<div class='textruta'>
+					<p> <b> KOM OCH PROVA! </b> <br> <br>För att gå med i ett lag är det bara att provträna. Gå därför in på ungdomslag och leta reda på din åldersgrupp och titta vilka träningstider de har. Om du fortfarande är obekväm kan du kontakta tränaren innan och ställa honom några frågor. </p>
+				</div> <div class='textruta'>
+					<h3> Hur kan man bidra som förälder? </h3>
+					<p> <b> KOM OCH HJÄLP! </b> <br> <br> För att ge ditt barns lag den bästa upplevelsen i klubben kan du stå i kiosken. Detta ger pengar till klubben som kan spendera dessa på lyxiga klubb resor. </p>
+				</div>
+			</div>
+			<div id='hoger'>
+				<img src='images/lag.jpg' alt='lag' style='width: 62vw;'>
+				<h3> Årsmötet framträder den 16 juni-2019</h3>
+				<p> Mötet kommer att hållas vid skolan och det kommer att spelas mycket beachhandboll. Kom gärna med hela familjen eller släktingar så att det blir en redi.</p>
+			</div>
+		
+		</div>
+		
+		
+		<div id='footer'>
+			<div class='center'>
+				<div class='textbox'> <h2> "SHK är en förening för alla som vill ha roligt!"</h2></div>
+				<div class='textbox'> 
+					<p> <strong> </strong>Besök-/postadress </p>
+					<p>
+						<span> SHK handboll </span> <br> <span> Hagalid Skolan</span> <br> <span> hagalid vägen 13 </span> <br> <span> 245 45 Staffanstorp</span>
+					</p>
+				</div>
+				<div class='textbox'>
+				<p> <strong> </strong>Kontaktuppgifter </p>
+					<p>
+						<span> ordforande@staffanstorpshk.se </span> <br> <br> <span> Kansliets expeditions- och telefontider är måndag-fredag kl. 10-12. </span>
+				</p>
+				</div>
+			</div>
+		</div>
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+		</script>
+	</body>
+</html>
